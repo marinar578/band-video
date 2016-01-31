@@ -1,5 +1,5 @@
 <h1><%= @music_video.song_title%></h1>
 
-<iframe src=<%= "http://www.youtube.com/embed/#{@music_video.video_embed_url}" %>></iframe>
+<iframe src=<%= "https://www.youtube.com/embed/#{@music_video.video_embed_url}" %>></iframe>
 
 <p><%= link_to "Back", band_path(@music_video.band_id) %></p>
