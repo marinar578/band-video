@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: popup_video_production
-  username: popup_video
+  database: <%= ENV['POPUP_VIDEO_DATABASE'] %>
+  username: <%= ENV['POPUP_VIDEO_DATABASE_USER'] %>
   password: <%= ENV['POPUP_VIDEO_DATABASE_PASSWORD'] %>
+  host: <%= ENV['POPUP_VIDEO_DATABASE_HOST'] %>

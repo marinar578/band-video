@@ -7,7 +7,7 @@
     <% @music_videos.each do |vid| %>
         <li>
             <%= link_to vid.song_title, "/bands/#{@band.id}/music_videos/#{vid.id}" %><br>
-            <iframe src=<%= "http://www.youtube.com/embed/#{vid.video_embed_url}" %>></iframe>
+            <iframe src=<%= "https://www.youtube.com/embed/#{vid.video_embed_url}" %>></iframe>
         </li>
     <%end%>
 </ul>
